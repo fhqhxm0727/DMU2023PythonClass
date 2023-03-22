@@ -5,7 +5,7 @@ gnum = 0
 while True :
     com= random.randrange(3)
     user= int(input('가위0 바위1 보2 선택: '))
-    if not(user in [0, 1, 2]) :
+    if (user in [0, 1, 2]) :
         print('결과 user= %d, com= %d' % (user, com))
 
         if user == com :
