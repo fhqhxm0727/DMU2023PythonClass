@@ -19,7 +19,7 @@ wantMinute = int(input("원하는 분 입력 : "))
 # 마지막 남은시간에서 nowSec이 0이 되어야 함
 # 
 
-while not isTmEnded :
+while not isTmEnded : 
     tm = localtime(time())
     nowHour = wantHour-tm.tm_hour
     if(wantMinute < tm.tm_min) : 
