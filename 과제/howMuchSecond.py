@@ -1,4 +1,5 @@
 from time import time
+from time import strftime
 from time import localtime
 from time import sleep
 
@@ -9,7 +10,7 @@ print("현재 시각은 %d시 %d분 %d초 입니다." % (launch_time.tm_hour, la
 sleep(int(input("몇 초 동안 대기할까요? : ")))
 
 afterSleep_time = localtime(time())
-print("현재 시각은 %d시 %d분 %d초 입니다." % (afterSleep_time.tm_hour, afterSleep_time.tm_min, afterSleep_time.tm_sec))
+print(strftime("현재 시각은 %H시 %M분 %S초 입니다.", afterSleep_time))
 
 # 실행 시간 저장
 # 입력한 초 만큼 sleep으로 대기
