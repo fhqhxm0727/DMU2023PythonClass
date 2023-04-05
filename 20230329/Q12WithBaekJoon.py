@@ -3,7 +3,8 @@
 # 구할 범위의 인덱스 값 두개 입력받음
 
 # 합 배열을 생성하여 작성하도록 한다
-
+suNo = 0
+quizNo = 0
 suNo, quizNo = map(int, input().split())
 
 numbers = list(map(int, input().split()))
